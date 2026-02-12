@@ -214,6 +214,18 @@ nav ul li a:hover::after {
   margin-bottom: 10px;
 }
 
+.experience-item h3 a {
+  color: inherit;
+  font-size: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+.experience-item h3 a:hover {
+  color: #e76f51;
+}
+
 .experience-item p,
 .experience-item ul {
   font-size: 18px;
