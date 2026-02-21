@@ -147,11 +147,13 @@ nav ul li a:hover::after {
 .links a {
   background-color: #01192B;
   color: #e0e1dd;
+  display: inline-block;
   padding: 12px 24px;
   border-radius: 5px;
   text-decoration: none;
   margin: 5px;
   font-size: 18px;
+  white-space: nowrap;
   transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
