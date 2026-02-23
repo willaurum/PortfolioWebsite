@@ -1,658 +1,658 @@
 {
-    "lethal_event_chance": 0.27,
-    "inventory_event_chance": 0.15,
-    "loot_event_chance": 0.25,
-    "special_item_event_chance": 0.33,
-    "min_events_per_day": 1,
-    "max_events_per_day": 8,
-    "bloodbath_event_range": [6, 9],
-    "bloodbath_lethal_bonus": 0.37,
-    "inventory_items": [
-        "medical kit",
-        "Small First-Aid Kit",
-        "snare trap", 
-        "flare",
-        "camouflage cloak",
-        "Weatherproof Cloak",
-        "ration pack",
-        "throwing knife",
-        "Hunting Knife",
-        "baseball bat",
-        "Taco Bell Meal Deal",
-        "herb bundle",
-        "bow",
-        "stick",
-        "Dagger",
-        "Steel bar",
-        "poetry anthology",
-        "grappling hook",
-        "duct tape roll",
-        "night-vision goggles",
-        "hand mirror",
-        "fire starter kit",
-        "Flint & Steel",
-        "ancient coin",
-        "radio transmitter",
-        "rubber chicken",
-        "gun",
-        "grenade",
-        "traffic cone that makes you think you're William Shakespeare",
-        "popcorn",
-        "rope",
-        "Coiled Rope",
-        "canteen",
-        "Water Canteen",
-        "sleeping bag",
-        "binoculars",
-        "fishing line",
-        "compass",
-        "map fragment",
-        "bandages",
-        "mysterious key",
-        "stone axe",
-        "paracord bracelet",
-        "wooden shield",
-        "signal whistle",
-        "bag of stale marshmallows",
-        "novelty sunglasses"
-    ],
-    "non_lethal_events": [
-        "{person} scouts the cornucopia from afar.",
-        "{person} eats dirt.",
-        "{person} takes a careless nap",
-        "{person} reinforces a hidden bunker.",
-        "{person} stalks distant footsteps but loses the trail.",
-        "{person} hides beneath branches as distant screams echo.",
-        "{person} drinks from a muddy stream and hopes it’s safe.",
-        "{person} farms aura.",
-        "{person} finds nemo",
-        "{person} forgot.",
-        "{person} accidentally gives away their position and quickly relocates.",
-        "{person} quietly reinforces their camp, listening for movement in the trees.",
-        "{person} follows a trail of footprints but turns back when they suddenly vanish.",
-        "{person} climbs a tree to scout the area and nearly slips.",
-        "{person} builds a crude alarm system using sticks and stones.",
-        "{person} collects rainwater in a leaf-lined pit.",
-        "{person} studies the terrain, searching for defensible ground.",
-        "{person} hears rustling nearby and freezes until it fades.",
-        "{person} creates decoy tracks to confuse anyone following them.",
-        "{person} rests briefly, keeping their eyes on the treeline.",
-        "{person} sharpens their senses by listening to distant echoes.",
-        "{person} inspects a set of claw marks carved into a tree.",
-        "{person} marks a safe path with small piles of stones.",
-        "{person} debates with a squirrel for dominance of a log. The squirrel wins.",
-        "{person} debates with a squirrel for dominance of a log. The squirrel losses.",
-        "{person} dramatically rolls behind a rock… even though nobody is around.",
-        "{person} mistakes a bush for an enemy and apologizes to it.",
-        "{person} delivers a motivational speech to themselves and feels slightly better.",
-        "{person} waves at a sponser drone, hoping for snacks.",
-        "{person} trips over nothing, pretends it was part of a tactical maneuver.",
-        "{person} practices battle poses in case cameras are watching.",
-        "{person} whispers threats to a tree, which remains unimpressed.",
-        "{person} mutters, \"rhymes with Grug,\" and nods as if it explains everything.",
-        {
-            "text": "{person} plots quietly with {ally} and {rival} deep into the night.",
-            "extra_roles": ["ally", "rival"]
-        },
-        {
-            "text": "{person} negotiates an uneasy truce with {ally} while keeping an eye on {traitor}.",
-            "extra_roles": ["ally", "traitor"]
-        },
-        {
-            "text": "{person} follows {rival}.",
-            "extra_roles": ["rival"]
-        },
-        {
-            "text": "{person} whispers plans with {ally}, keeping a close ear on {rival}'s movements.",
-            "extra_roles": ["ally", "rival"]
-        },
-        {
-            "text": "{person} and {ally} search for supplies together but nearly walk into {rival}.",
-            "extra_roles": ["ally", "rival"]
-        },
-        {
-            "text": "{person} shadows {rival}, only to realize {ally} has been shadowing them both.",
-            "extra_roles": ["ally", "rival"]
-        },
-        {
-            "text": "{person} forms a brief alliance with {ally}, though both side-eye {traitor} the entire time.",
-            "extra_roles": ["ally", "traitor"]
-        },
-        {
-            "text": "{person}, {ally}, and {rival} all reach for the same water source and awkwardly pretend they weren’t.",
-            "extra_roles": ["ally", "rival"]
-        },
-        {
-            "text": "{person} convinces {ally} to work together, but {rival} loudly mocks their teamwork.",
-            "extra_roles": ["ally", "rival"]
-        },
-        {
-            "text": "{person} sneaks up on {rival}, only to find {ally} also sneaking up on {rival}.",
-            "extra_roles": ["ally", "rival"]
-        },
-        {
-            "text": "{person} and {ally} discover footprints belonging to {rival}, sparking a silent chase.",
-            "extra_roles": ["ally", "rival"]
-        },
-        {
-            "text": "{person} mediates a tense argument between {ally} and {rival}.",
-            "extra_roles": ["ally", "rival"]
-        },
-        {
-            "text": "{person} tries to trick {rival}, but {ally} ruins the plan by laughing too loudly.",
-            "extra_roles": ["ally", "rival"]
-        },
-        {
-            "text": "{person} and {rival} lock eyes from across a clearing until {ally} ruins the moment by tripping.",
-            "extra_roles": ["ally", "rival"]
-        },
-        {
-            "text": "{person} walks into {ally} and {rival} arguing. They quietly walk back out.",
-            "extra_roles": ["ally", "rival"]
-        },
-        {
-            "text": "{person}, {ally}, and {rival} silently agree to not talk about the weird noise they just heard.",
-            "extra_roles": ["ally", "rival"]
-        },
-        {
-        "text": "{person}, {ally}, and {rival} stare at each other for a solid minute before all walking away in different directions.",
-        "extra_roles": ["ally", "rival"]
-        },
-        {
-            "text": "{person} waves awkwardly at {other} before hiding behind a tree.",
-            "extra_roles": ["other"]
-        },
-        {
-            "text": "{person} confidently approaches {other} to say something intimidating, but sneezes mid-sentence.",
-            "extra_roles": ["other"]
-        },
-        {
-            "text": "{person} tries to impress {other} by flexing, but pulls a muscle immediately.",
-            "extra_roles": ["other"]
-        },
-        {
-            "text": "{person} and {other} share a quiet conversation about home, finding comfort in each other's presence.",
-            "extra_roles": ["other"]
-        },
-        {
-            "text": "{person} walks beside {other} in peaceful silence, their steps naturally falling into the same rhythm.",
-            "extra_roles": ["other"]
-        },
-        {
-            "text": "{person} offers {other} a small, hand-made token of kindness, and {other} accepts it with a soft smile.",
-            "extra_roles": ["other"]
-        },
-        {
-            "text": "{person} and {other} share a sleeping bag.",
-            "extra_roles": ["other"]
-        },
-        {
-            "text": "{person} asks {other} if they prayed today.",
-            "extra_roles": ["other"]
-        }
-    ],
-    "lethal_events": [
-        "{killer} strangles {victim} to death.",
-        "{killer} pushes {victim} into a ravine.",
-        "{killer} pushes {victim} into a ravine with their aura.",
-        "{killer} outmatches {victim} after a tense duel.",
-        "{victim} hikes through the trees and is sniped from afar by {killer}",
-        "{killer} overwhelms {victim} during a close-quarters fight.",
-        "{killer} crushes {victim} with a boulder from above.",
-        "{killer} unleashes a swarm of tracker jackers on {victim}, killing them.",
-        "{killer} pushes {victim} into a pit of spike traps.",
-        "{killer} chloroforms {victim} with improvised chemicals.",
-        "{killer} slams {victim} into a tree until the forest goes quiet.",
-        "{victim} couldn't take it anymore.",
-        "{killer} takes advice from their mom and finally kills {victim}.",
-        "{killer} ragebaits {victim} into killing themselves (it was more peaceful)",
-        "{victim} trips and falls, the shock of this blunder kills them.",
-        "{killer}はすばやいひといきで{victim}をしとめた。",
-        "{killer} dropkicks {victim} into a tree with unbelievable force.",
-        "{killer} pushes {victim} off a narrow ridge while pretending it was an accident.",
-        "{killer} startles {victim}, who runs straight into a deadly trap.",
-        "{killer} kills and eats {victim}",
-        "{killer} suplexes {victim} so hard the arena briefly loses gravity.",
-        "{killer} screams at {victim}. The volume vaporizes them instantly.",
-        "{killer} drops a pinecone on {victim}. The pinecone explodes like a grenade.",
-        "{victim} and {killer} agree to a duel, {killer} wins.",
-        "{killer} writes slam poetry so hard it slams {victim}'s soul out of their body.",
-        "{killer} drops from the trees onto {victim}, ending them instantly.",
-        {
-            "text": "{killer} launches explosives that wipe out {victim} and {victim2}.",
-            "victim_count": 2
-        },
-        {
-            "text": "{killer} detonates a trap, taking out {victim} and {victim2}.",
-            "victim_count": 2
-        }
-    ],
-    "inventory_events": [
-        "{person} sets a {item} and waits patiently.",
-        "{person} finds a way to cure their wounds with their {item}.",
-        "{person} flashes a {item} to ward off pursuers.",
-        "{person} retools a {item} into something even more dangerous.",
-        "{person} fortifies a shelter using their {item}.",
-        "{person} cleans and maintains their {item}, preparing for nightfall.",
-        "{person} decorates their shelter using their {item}.",
-        "{person} experiments with their {item}, hoping it becomes useful.",
-        "{person} sharpens their {item} on a flat stone.",
-        "{person} practices different techniques with their {item}.",
-        "{person} hides their {item} beneath leaves so no one can steal it.",
-        "{person} nearly breaks their {item} while messing around with it.",
-        "{person} taps their {item} rhythmically to stay calm.",
-        "{person} fashions a crude tool using their {item}.",
-        "{person} defends their camp by placing their {item} at the entrance.",
-        "{person} uses their {item} to test if a path is safe.",
-        "{person} plays with their {item} absent-mindedly.",
-        "{person} upgrades their {item} using scraps found nearby.",
-        "{person} meditates while holding their {item}, gathering their resolve."
-    ],
-    "loot_events": [
-        "{person} scavenges a {item} from the Cornucopia wreckage.",
-        "{person} digs up a buried stash and pockets a {item}.",
-        "{person} barters quietly for a {item}.",
-        "{person} slips a {item} into their pack unnoticed.",
-        "{person} opens a package from a sponser and recieves a {item}",
-        "{person} discovers a supply crate and retrieves a {item}.",
-        "{person} lifts a {item} from a careless tribute’s camp.",
-        "{person} follows a sponser drone and steals a dropped {item}.",
-        "{person} finds a waterproof box with a {item} inside.",
-        "{person} finds a backpack washed up on a stream bank with a {item} inside."
-    ],
-    "item_loot_text": {
-        "herb bundle": [
-            "{person} kneels by a patch of greenery and comes away with a fragrant herb bundle.",
-            "{person} snips a handful of herbs and wraps them carefully for later."
-        ],
-        "Taco Bell Meal Deal": [
-            "{person} finds a pristine Taco Bell Meal Deal still warm from the sponsers."
-        ],
-        "rubber chicken": [
-            "{person} finds a rubber chicken and questions their luck."
-        ],
-        "poetry anthology": [
-            "{person} is gifted a poetry anthology from their sponser.",
-            "With sudden inspiration, {person} writes a beautiful poetry anthology"
-        ],
-        "traffic cone that makes you think you're William Shakespeare": [
-            "{person} unearths a humble traffic cone, yet upon touching it, their mind is seized by the spirit of William Shakespearee himself.",
-            "{person} beholds a traffic cone lying in the dust; as they lift it, a sudden tempest of poetic genius floods their thoughts."
-        ],
-        "popcorn": [
-            "{person} recieves some popcorn from a sponser.",
-            "{person} finds a microwave and some unpopped popcorn"
-        ],
-        "Hunting Knife": [
-            "{person} retrieves a hunting knife from the Cornucopia floor, its blade still gleaming.",
-            "{person} digs through debris and uncovers a sturdy hunting knife."
-        ],
-        "Flint & Steel": [
-            "{person} picks up a set of flint and steel wrapped in cloth.",
-            "{person} discovers flint and steel tucked beneath a broken crate."
-        ],
-        "Water Canteen": [
-            "{person} finds a dented but usable water canteen.",
-            "{person} scoops up a metal canteen half-buried in the mud."
-        ],
-        "Small First-Aid Kit": [
-            "{person} grabs a compact first-aid kit from a sponser drop.",
-            "{person} uncovers a dusty first-aid kit hidden under loose gravel."
-        ],
-        "Coiled Rope": [
-            "{person} slings a coil of rope over their shoulder after retrieving it from the Cornucopia.",
-            "{person} finds a length of rope tangled around tree roots."
-        ],
-        "Weatherproof Cloak": [
-            "{person} pulls on a weatherproof cloak lined with coarse fabric.",
-            "{person} retrieves a rugged cloak from a sponser crate."
-        ]
+  "lethal_event_chance": 0.27,
+  "inventory_event_chance": 0.15,
+  "loot_event_chance": 0.25,
+  "special_item_event_chance": 0.33,
+  "min_events_per_day": 1,
+  "max_events_per_day": 8,
+  "bloodbath_event_range": [6, 9],
+  "bloodbath_lethal_bonus": 0.37,
+  "inventory_items": [
+    "medical kit",
+    "Small First-Aid Kit",
+    "snare trap",
+    "flare",
+    "camouflage cloak",
+    "Weatherproof Cloak",
+    "ration pack",
+    "throwing knife",
+    "Hunting Knife",
+    "baseball bat",
+    "Taco Bell Meal Deal",
+    "herb bundle",
+    "bow",
+    "stick",
+    "Dagger",
+    "Steel bar",
+    "poetry anthology",
+    "grappling hook",
+    "duct tape roll",
+    "night-vision goggles",
+    "hand mirror",
+    "fire starter kit",
+    "Flint & Steel",
+    "ancient coin",
+    "radio transmitter",
+    "rubber chicken",
+    "gun",
+    "grenade",
+    "traffic cone that makes you think you're William Shakespeare",
+    "popcorn",
+    "rope",
+    "Coiled Rope",
+    "canteen",
+    "Water Canteen",
+    "sleeping bag",
+    "binoculars",
+    "fishing line",
+    "compass",
+    "map fragment",
+    "bandages",
+    "mysterious key",
+    "stone axe",
+    "paracord bracelet",
+    "wooden shield",
+    "signal whistle",
+    "bag of stale marshmallows",
+    "novelty sunglasses"
+  ],
+  "non_lethal_events": [
+    "{person} scouts the cornucopia from afar.",
+    "{person} eats dirt.",
+    "{person} hits the woah",
+    "{person} takes a careless nap",
+    "{person} reinforces a hidden bunker.",
+    "{person} stalks distant footsteps but loses the trail.",
+    "{person} hides beneath branches as distant screams echo.",
+    "{person} drinks from a muddy stream and hopes it’s safe.",
+    "{person} farms aura.",
+    "{person} finds nemo",
+    "{person} forgot.",
+    "{person} accidentally gives away their position and quickly relocates.",
+    "{person} quietly reinforces their camp, listening for movement in the trees.",
+    "{person} follows a trail of footprints but turns back when they suddenly vanish.",
+    "{person} climbs a tree to scout the area and nearly slips.",
+    "{person} builds a crude alarm system using sticks and stones.",
+    "{person} collects rainwater in a leaf-lined pit.",
+    "{person} studies the terrain, searching for defensible ground.",
+    "{person} hears rustling nearby and freezes until it fades.",
+    "{person} creates decoy tracks to confuse anyone following them.",
+    "{person} rests briefly, keeping their eyes on the treeline.",
+    "{person} sharpens their senses by listening to distant echoes.",
+    "{person} inspects a set of claw marks carved into a tree.",
+    "{person} marks a safe path with small piles of stones.",
+    "{person} debates with a squirrel for dominance of a log. The squirrel wins.",
+    "{person} debates with a squirrel for dominance of a log. The squirrel losses.",
+    "{person} dramatically rolls behind a rock… even though nobody is around.",
+    "{person} mistakes a bush for an enemy and apologizes to it.",
+    "{person} delivers a motivational speech to themselves and feels slightly better.",
+    "{person} waves at a sponser drone, hoping for snacks.",
+    "{person} trips over nothing, pretends it was part of a tactical maneuver.",
+    "{person} practices battle poses in case cameras are watching.",
+    "{person} whispers threats to a tree, which remains unimpressed.",
+    "{person} mutters, \"rhymes with Grug,\" and nods as if it explains everything.",
+    {
+      "text": "{person} plots quietly with {ally} and {rival} deep into the night.",
+      "extra_roles": ["ally", "rival"]
     },
-    "special_item_events": [
-        {
-            "item": "flare",
-            "consumes": true,
-            "events": [
-                "{person} fires a {item}, flooding the sky with light and drawing watchers.",
-                "{person} pops a {item} to blind anyone nearby and sprints for cover."
-            ]
-        },
-        {
-            "item": "medkit",
-            "consumes": true,
-            "events": [
-                "{person} spends the afternoon patching wounds with their {item}.",
-                "{person} uses their {item} heal themself."
-            ]
-        },
-        {
-            "item": "Small First-Aid Kit",
-            "consumes": true,
-            "events": [
-                "{person} treats their wounds with supplies from the {item}.",
-                {
-                    "text": "{person} attempts to save {victim} using the {item}, but their injuries are too severe."
-                }
-            ]
-        },
-        {
-            "item": "snare trap",
-            "consumes": false,
-            "events": [
-                {
-                    "text": "{person} rigs a {item} near the riverbank and waits for footsteps.",
-                    "consumes": false
-                },
-                {
-                    "text": "{person} repositions their {item}, tightening the perimeter.",
-                    "consumes": false
-                },
-                {
-                    "text": "{person}'s {item} snaps shut on {victim}, ending their run.",
-                    "lethal": true,
-                    "consumes": false
-                },
-                {
-                    "text": "{victim} and {victim2} never see the {item} that {person} left behind.",
-                    "lethal": true,
-                    "victim_count": 2,
-                    "consumes": false
-                }
-            ]
-        },
-        {
-            "item": "throwing knife",
-            "consumes": true,
-            "events": [
-                {
-                    "text": "{person} hurls a {item} straight into {victim}.",
-                    "lethal": true,
-                    "consumes": true
-                },
-                {
-                    "text": "{person} stalks {victim} with a {item} and doesn't miss.",
-                    "lethal": true,
-                    "consumes": true
-                },
-                {
-                    "text": "{person} fans blades so fast that {victim} and {victim2} both fall.",
-                    "lethal": true,
-                    "victim_count": 2,
-                    "consumes": true
-                }
-            ]
-        },
-        {
-            "item": "Hunting Knife",
-            "consumes": false,
-            "events": [
-                "{person} sharpens their {item} on a flat stone.",
-                {
-                    "text": "{person} stabs {victim} with their {item}, ending the fight instantly.",
-                    "lethal": true,
-                    "consumes": false
-                }
-            ]
-        },
-        {
-            "item": "Taco Bell Meal Deal",
-            "consumes": true,
-            "events": [
-                "{person} eats their {item}.",
-                {
-                    "text": "{person} shares their {item} with {victim}.",
-                    "lethal": false,
-                    "consumes": false
-                }
-            ]
-        },
-        {
-            "item": "stick",
-            "consumes": false,
-            "events": [
-                "{person} readies their {item}.",
-                "{person} chews their {item}",
-                {
-                    "text": "{person} attempts to murder {victim} with their {item} and fails.",
-                    "lethal": false,
-                    "consumes": false
-                },
-                {
-                    "text": "{person} attempts to murder {victim} with their {item} and fails.",
-                    "lethal": false,
-                    "consumes": false
-                },
-                {
-                    "text": "{person} attempts to murder {victim} with their {item} and fails.",
-                    "lethal": false,
-                    "consumes": false
-                },
-                {
-                    "text": "{person} attempts to murder {victim} with their {item} and succedes.",
-                    "lethal": true,
-                    "consumes": true
-                }
-            ]
-        },
-        {
-            "item": "Water Canteen",
-            "consumes": false,
-            "events": [
-                "{person} carefully refills their {item} at a stream.",
-                {
-                    "text": "Dehydrated and desperate, {victim} fights {person} for their {item}. {victim} doesn't survive the struggle.",
-                    "lethal": true,
-                    "consumes": false
-                }
-            ]
-        },
-        {
-            "item": "bow",
-            "consumes": false,
-            "events": [
-                {
-                    "text": "{person} tends to their {item}.",
-                    "consumes": false
-                },
-                {
-                    "text": "{person} shoots {victim} with their {item}.",
-                    "lethal": true,
-                    "consumes": false
-                },
-                {
-                    "text": "{person} rains arrows until {victim} and {victim2} both drop.",
-                    "lethal": true,
-                    "victim_count": 2,
-                    "consumes": true
-                }
-            ]
-        },
-        {
-            "item": "poetry anthology",
-            "consumes": false,
-            "events": [
-                "{person} reads an excerpt from their {item}",
-                {
-                    "text": "{person} overwhelms {victim} with the power of poetry, killing them.",
-                    "lethal": true,
-                    "consumes": true
-                },
-                {
-                    "text": "{person} drops their anthology in the mud, ruining it",
-                    "lethal": false,
-                    "consumes": true
-                }
-            ]
-        },
-        {
-            "item": "popcorn",
-            "consumes": true,
-            "lethal": false,
-            "events": [
-                "{person} stands behind a tree watching {victim} while eating {item}."
-            ]
-        },
-        {
-            "item": "grappling hook",
-            "consumes": false,
-            "events": [
-                "{person} scales a cliff using their {item}.",
-                "{person} escapes danger by swinging away with their {item}.",
-                {
-                "text": "{person} drops onto {victim} from above using the {item}, killing them instantly.",
-                "lethal": true,
-                "consumes": false
-                }
-            ]
-        },
-        {
-            "item": "Coiled Rope",
-            "consumes": false,
-            "events": [
-                "{person} uses the {item} to climb a steep cliffside.",
-                {
-                    "text": "{person} sets a rope trap that snaps tight around {victim}, killing them in the struggle.",
-                    "lethal": true,
-                    "consumes": false
-                }
-            ]
-        },
-        {
-            "item": "duct tape roll",
-            "consumes": true,
-            "events": [
-                "{person} patches broken gear with the {item}.",
-                "{person} wraps their wounds tightly with the {item}.",
-                {
-                "text": "{person} restrains {victim} with the {item} and finishes them off.",
-                "lethal": true,
-                "consumes": true
-                }
-            ]
-        },
-        {
-            "item": "Weatherproof Cloak",
-            "consumes": false,
-            "events": [
-                "{person} wraps their {item} tighter as rain pours over the arena.",
-                {
-                    "text": "{victim} attacks {person}, but the {item} absorbs the blow... {person} counterattacks and kills {victim}.",
-                    "lethal": true,
-                    "consumes": false
-                }
-            ]
-        },
-        {
-            "item": "fire starter kit",
-            "consumes": false,
-            "events": [
-                "{person} starts a controlled fire with the {item}.",
-                {
-                "text": "{person} sets a trap by lighting foliage, burning {victim} alive.",
-                "lethal": true
-                }
-            ]
-        },
-        {
-            "item": "Flint & Steel",
-            "consumes": false,
-            "events": [
-                "{person} uses their {item} to start a small fire for warmth.",
-                "{person} chants ''Flint and Steel!'' in an unusually familar way.",
-                {
-                    "text": "{person} sparks dry leaves near {victim}, and the sudden blaze overwhelms them.",
-                    "lethal": true,
-                    "consumes": false
-                }
-            ]
-        },
-        {
-            "item": "gun",
-            "consumes": false,
-            "events": [
-                "{person} cleans their {item}.",
-                {
-                "text": "{person} shoots {victim}.",
-                "lethal": true,
-                "consumes": false
-                },
-                {
-                "text": "{person} shoots {victim}.",
-                "lethal": true,
-                "consumes": false
-                },
-                {
-                "text": "{person} tests their {item} and breaks it.",
-                "lethal": false,
-                "consumes": true
-                }
-            ]
-        },
-        {
-            "item": "grenade",
-            "consumes": false,
-            "events": [
-                "{person} admires their {item}.",
-                {
-                "text": "{person} throws their {item}, killing  {victim} and {victim2}.",
-                    "lethal": true,
-                    "victim_count": 2,
-                    "consumes": true
-                },
-                {
-                "text": "{person} throws their {item}, killing  {victim}.",
-                    "lethal": true,
-                    "consumes": true
-                }
-            ]
-        },
-        {
-            "item": "traffic cone that makes you think you're William Shakespeare",
-            "consumes": false,
-            "events": [
-                "{person}, now convinced they are the Bard reborn, doth place the {item} upon their head like a crown and proclaims, 'Hark! A new play begins!'",
-                "{person} wanders the arena clutching the {item}, reciting verses unknown to mortal ears.",
-                {
-                    "text": "Inspired by the {item}, {person} delivers a tragic soliloquy so profound that {victim} stands entranced - till {person} strikes them down with eloquence.",
-                    "lethal": true
-                },
-                {
-                    "text": "{person}, channeling the fury of a thousand sonnets, commands the {item} as though it were a royal scepter and smites {victim} with theatrical flourish.",
-                    "lethal": true
-                },
-                {
-                    "text": "With grand Shakespearean bravado, {person} challenges {victim} and {victim2} to a duel of words, yet ends the contest with steel instead.",
-                    "lethal": true,
-                    "consumes": true,
-                    "victim_count": 2
-                },
-                "{person} pauses mid-battle to narrate their own tale, the {item} held aloft: 'Forsooth, Act III shall not be my end!'"
-            ]
-        },
-        {
-            "item": "wooden shield",
-            "consumes": false,
-            "events": [
-                "{person} braces behind the {item}, testing how much punishment it can take.",
-                {
-                    "text": "{victim} hammers {person} with a spear, but every strike glances off the {item} until {person} rushes forward and smashes {victim}.",
-                    "lethal": true,
-                    "consumes": false
-                },
-                {
-                    "text": "{person} turtles up behind the {item} while {victim} fires wildly; once the barrage fades, {person} surges through and caves {victim}'s skull.",
-                    "lethal": true,
-                    "consumes": false
-                },
-                {
-                    "text": "{person} locks the {item} in front as {victim} and {victim2} attack from both sides, then whips the shield outward and leaves them both lifeless.",
-                    "lethal": true,
-                    "victim_count": 2,
-                    "consumes": false
-                }
-            ]
-        }
-
+    {
+      "text": "{person} negotiates an uneasy truce with {ally} while keeping an eye on {traitor}.",
+      "extra_roles": ["ally", "traitor"]
+    },
+    {
+      "text": "{person} follows {rival}.",
+      "extra_roles": ["rival"]
+    },
+    {
+      "text": "{person} whispers plans with {ally}, keeping a close ear on {rival}'s movements.",
+      "extra_roles": ["ally", "rival"]
+    },
+    {
+      "text": "{person} and {ally} search for supplies together but nearly walk into {rival}.",
+      "extra_roles": ["ally", "rival"]
+    },
+    {
+      "text": "{person} shadows {rival}, only to realize {ally} has been shadowing them both.",
+      "extra_roles": ["ally", "rival"]
+    },
+    {
+      "text": "{person} forms a brief alliance with {ally}, though both side-eye {traitor} the entire time.",
+      "extra_roles": ["ally", "traitor"]
+    },
+    {
+      "text": "{person}, {ally}, and {rival} all reach for the same water source and awkwardly pretend they weren’t.",
+      "extra_roles": ["ally", "rival"]
+    },
+    {
+      "text": "{person} convinces {ally} to work together, but {rival} loudly mocks their teamwork.",
+      "extra_roles": ["ally", "rival"]
+    },
+    {
+      "text": "{person} sneaks up on {rival}, only to find {ally} also sneaking up on {rival}.",
+      "extra_roles": ["ally", "rival"]
+    },
+    {
+      "text": "{person} and {ally} discover footprints belonging to {rival}, sparking a silent chase.",
+      "extra_roles": ["ally", "rival"]
+    },
+    {
+      "text": "{person} mediates a tense argument between {ally} and {rival}.",
+      "extra_roles": ["ally", "rival"]
+    },
+    {
+      "text": "{person} tries to trick {rival}, but {ally} ruins the plan by laughing too loudly.",
+      "extra_roles": ["ally", "rival"]
+    },
+    {
+      "text": "{person} and {rival} lock eyes from across a clearing until {ally} ruins the moment by tripping.",
+      "extra_roles": ["ally", "rival"]
+    },
+    {
+      "text": "{person} walks into {ally} and {rival} arguing. They quietly walk back out.",
+      "extra_roles": ["ally", "rival"]
+    },
+    {
+      "text": "{person}, {ally}, and {rival} silently agree to not talk about the weird noise they just heard.",
+      "extra_roles": ["ally", "rival"]
+    },
+    {
+      "text": "{person}, {ally}, and {rival} stare at each other for a solid minute before all walking away in different directions.",
+      "extra_roles": ["ally", "rival"]
+    },
+    {
+      "text": "{person} waves awkwardly at {other} before hiding behind a tree.",
+      "extra_roles": ["other"]
+    },
+    {
+      "text": "{person} confidently approaches {other} to say something intimidating, but sneezes mid-sentence.",
+      "extra_roles": ["other"]
+    },
+    {
+      "text": "{person} tries to impress {other} by flexing, but pulls a muscle immediately.",
+      "extra_roles": ["other"]
+    },
+    {
+      "text": "{person} and {other} share a quiet conversation about home, finding comfort in each other's presence.",
+      "extra_roles": ["other"]
+    },
+    {
+      "text": "{person} walks beside {other} in peaceful silence, their steps naturally falling into the same rhythm.",
+      "extra_roles": ["other"]
+    },
+    {
+      "text": "{person} offers {other} a small, hand-made token of kindness, and {other} accepts it with a soft smile.",
+      "extra_roles": ["other"]
+    },
+    {
+      "text": "{person} and {other} share a sleeping bag.",
+      "extra_roles": ["other"]
+    },
+    {
+      "text": "{person} asks {other} if they prayed today.",
+      "extra_roles": ["other"]
+    }
+  ],
+  "lethal_events": [
+    "{killer} strangles {victim} to death.",
+    "{killer} pushes {victim} into a ravine.",
+    "{killer} pushes {victim} into a ravine with their aura.",
+    "{killer} outmatches {victim} after a tense duel.",
+    "{victim} hikes through the trees and is sniped from afar by {killer}",
+    "{killer} overwhelms {victim} during a close-quarters fight.",
+    "{killer} crushes {victim} with a boulder from above.",
+    "{killer} unleashes a swarm of tracker jackers on {victim}, killing them.",
+    "{killer} pushes {victim} into a pit of spike traps.",
+    "{killer} chloroforms {victim} with improvised chemicals.",
+    "{killer} slams {victim} into a tree until the forest goes quiet.",
+    "{victim} couldn't take it anymore.",
+    "{killer} takes advice from their mom and finally kills {victim}.",
+    "{killer} ragebaits {victim} into killing themselves (it was more peaceful)",
+    "{victim} trips and falls, the shock of this blunder kills them.",
+    "{killer}はすばやいひといきで{victim}をしとめた。",
+    "{killer} dropkicks {victim} into a tree with unbelievable force.",
+    "{killer} pushes {victim} off a narrow ridge while pretending it was an accident.",
+    "{killer} startles {victim}, who runs straight into a deadly trap.",
+    "{killer} kills and eats {victim}",
+    "{killer} suplexes {victim} so hard the arena briefly loses gravity.",
+    "{killer} screams at {victim}. The volume vaporizes them instantly.",
+    "{killer} drops a pinecone on {victim}. The pinecone explodes like a grenade.",
+    "{victim} and {killer} agree to a duel, {killer} wins.",
+    "{killer} writes slam poetry so hard it slams {victim}'s soul out of their body.",
+    "{killer} drops from the trees onto {victim}, ending them instantly.",
+    {
+      "text": "{killer} launches explosives that wipe out {victim} and {victim2}.",
+      "victim_count": 2
+    },
+    {
+      "text": "{killer} detonates a trap, taking out {victim} and {victim2}.",
+      "victim_count": 2
+    }
+  ],
+  "inventory_events": [
+    "{person} sets a {item} and waits patiently.",
+    "{person} finds a way to cure their wounds with their {item}.",
+    "{person} flashes a {item} to ward off pursuers.",
+    "{person} retools a {item} into something even more dangerous.",
+    "{person} fortifies a shelter using their {item}.",
+    "{person} cleans and maintains their {item}, preparing for nightfall.",
+    "{person} decorates their shelter using their {item}.",
+    "{person} experiments with their {item}, hoping it becomes useful.",
+    "{person} sharpens their {item} on a flat stone.",
+    "{person} practices different techniques with their {item}.",
+    "{person} hides their {item} beneath leaves so no one can steal it.",
+    "{person} nearly breaks their {item} while messing around with it.",
+    "{person} taps their {item} rhythmically to stay calm.",
+    "{person} fashions a crude tool using their {item}.",
+    "{person} defends their camp by placing their {item} at the entrance.",
+    "{person} uses their {item} to test if a path is safe.",
+    "{person} plays with their {item} absent-mindedly.",
+    "{person} upgrades their {item} using scraps found nearby.",
+    "{person} meditates while holding their {item}, gathering their resolve."
+  ],
+  "loot_events": [
+    "{person} scavenges a {item} from the Cornucopia wreckage.",
+    "{person} digs up a buried stash and pockets a {item}.",
+    "{person} barters quietly for a {item}.",
+    "{person} slips a {item} into their pack unnoticed.",
+    "{person} opens a package from a sponser and recieves a {item}",
+    "{person} discovers a supply crate and retrieves a {item}.",
+    "{person} lifts a {item} from a careless tribute’s camp.",
+    "{person} follows a sponser drone and steals a dropped {item}.",
+    "{person} finds a waterproof box with a {item} inside.",
+    "{person} finds a backpack washed up on a stream bank with a {item} inside."
+  ],
+  "item_loot_text": {
+    "herb bundle": [
+      "{person} kneels by a patch of greenery and comes away with a fragrant herb bundle.",
+      "{person} snips a handful of herbs and wraps them carefully for later."
     ],
-    "victory_template": "{name} emerges victorious with {kills} elimination(s)!"
+    "Taco Bell Meal Deal": [
+      "{person} finds a pristine Taco Bell Meal Deal still warm from the sponsers."
+    ],
+    "rubber chicken": [
+      "{person} finds a rubber chicken and questions their luck."
+    ],
+    "poetry anthology": [
+      "{person} is gifted a poetry anthology from their sponser.",
+      "With sudden inspiration, {person} writes a beautiful poetry anthology"
+    ],
+    "traffic cone that makes you think you're William Shakespeare": [
+      "{person} unearths a humble traffic cone, yet upon touching it, their mind is seized by the spirit of William Shakespearee himself.",
+      "{person} beholds a traffic cone lying in the dust; as they lift it, a sudden tempest of poetic genius floods their thoughts."
+    ],
+    "popcorn": [
+      "{person} recieves some popcorn from a sponser.",
+      "{person} finds a microwave and some unpopped popcorn"
+    ],
+    "Hunting Knife": [
+      "{person} retrieves a hunting knife from the Cornucopia floor, its blade still gleaming.",
+      "{person} digs through debris and uncovers a sturdy hunting knife."
+    ],
+    "Flint & Steel": [
+      "{person} picks up a set of flint and steel wrapped in cloth.",
+      "{person} discovers flint and steel tucked beneath a broken crate."
+    ],
+    "Water Canteen": [
+      "{person} finds a dented but usable water canteen.",
+      "{person} scoops up a metal canteen half-buried in the mud."
+    ],
+    "Small First-Aid Kit": [
+      "{person} grabs a compact first-aid kit from a sponser drop.",
+      "{person} uncovers a dusty first-aid kit hidden under loose gravel."
+    ],
+    "Coiled Rope": [
+      "{person} slings a coil of rope over their shoulder after retrieving it from the Cornucopia.",
+      "{person} finds a length of rope tangled around tree roots."
+    ],
+    "Weatherproof Cloak": [
+      "{person} pulls on a weatherproof cloak lined with coarse fabric.",
+      "{person} retrieves a rugged cloak from a sponser crate."
+    ]
+  },
+  "special_item_events": [
+    {
+      "item": "flare",
+      "consumes": true,
+      "events": [
+        "{person} fires a {item}, flooding the sky with light and drawing watchers.",
+        "{person} pops a {item} to blind anyone nearby and sprints for cover."
+      ]
+    },
+    {
+      "item": "medkit",
+      "consumes": true,
+      "events": [
+        "{person} spends the afternoon patching wounds with their {item}.",
+        "{person} uses their {item} heal themself."
+      ]
+    },
+    {
+      "item": "Small First-Aid Kit",
+      "consumes": true,
+      "events": [
+        "{person} treats their wounds with supplies from the {item}.",
+        {
+          "text": "{person} attempts to save {victim} using the {item}, but their injuries are too severe."
+        }
+      ]
+    },
+    {
+      "item": "snare trap",
+      "consumes": false,
+      "events": [
+        {
+          "text": "{person} rigs a {item} near the riverbank and waits for footsteps.",
+          "consumes": false
+        },
+        {
+          "text": "{person} repositions their {item}, tightening the perimeter.",
+          "consumes": false
+        },
+        {
+          "text": "{person}'s {item} snaps shut on {victim}, ending their run.",
+          "lethal": true,
+          "consumes": false
+        },
+        {
+          "text": "{victim} and {victim2} never see the {item} that {person} left behind.",
+          "lethal": true,
+          "victim_count": 2,
+          "consumes": false
+        }
+      ]
+    },
+    {
+      "item": "throwing knife",
+      "consumes": true,
+      "events": [
+        {
+          "text": "{person} hurls a {item} straight into {victim}.",
+          "lethal": true,
+          "consumes": true
+        },
+        {
+          "text": "{person} stalks {victim} with a {item} and doesn't miss.",
+          "lethal": true,
+          "consumes": true
+        },
+        {
+          "text": "{person} fans blades so fast that {victim} and {victim2} both fall.",
+          "lethal": true,
+          "victim_count": 2,
+          "consumes": true
+        }
+      ]
+    },
+    {
+      "item": "Hunting Knife",
+      "consumes": false,
+      "events": [
+        "{person} sharpens their {item} on a flat stone.",
+        {
+          "text": "{person} stabs {victim} with their {item}, ending the fight instantly.",
+          "lethal": true,
+          "consumes": false
+        }
+      ]
+    },
+    {
+      "item": "Taco Bell Meal Deal",
+      "consumes": true,
+      "events": [
+        "{person} eats their {item}.",
+        {
+          "text": "{person} shares their {item} with {victim}.",
+          "lethal": false,
+          "consumes": false
+        }
+      ]
+    },
+    {
+      "item": "stick",
+      "consumes": false,
+      "events": [
+        "{person} readies their {item}.",
+        "{person} chews their {item}",
+        {
+          "text": "{person} attempts to murder {victim} with their {item} and fails.",
+          "lethal": false,
+          "consumes": false
+        },
+        {
+          "text": "{person} attempts to murder {victim} with their {item} and fails.",
+          "lethal": false,
+          "consumes": false
+        },
+        {
+          "text": "{person} attempts to murder {victim} with their {item} and fails.",
+          "lethal": false,
+          "consumes": false
+        },
+        {
+          "text": "{person} attempts to murder {victim} with their {item} and succedes.",
+          "lethal": true,
+          "consumes": true
+        }
+      ]
+    },
+    {
+      "item": "Water Canteen",
+      "consumes": false,
+      "events": [
+        "{person} carefully refills their {item} at a stream.",
+        {
+          "text": "Dehydrated and desperate, {victim} fights {person} for their {item}. {victim} doesn't survive the struggle.",
+          "lethal": true,
+          "consumes": false
+        }
+      ]
+    },
+    {
+      "item": "bow",
+      "consumes": false,
+      "events": [
+        {
+          "text": "{person} tends to their {item}.",
+          "consumes": false
+        },
+        {
+          "text": "{person} shoots {victim} with their {item}.",
+          "lethal": true,
+          "consumes": false
+        },
+        {
+          "text": "{person} rains arrows until {victim} and {victim2} both drop.",
+          "lethal": true,
+          "victim_count": 2,
+          "consumes": true
+        }
+      ]
+    },
+    {
+      "item": "poetry anthology",
+      "consumes": false,
+      "events": [
+        "{person} reads an excerpt from their {item}",
+        {
+          "text": "{person} overwhelms {victim} with the power of poetry, killing them.",
+          "lethal": true,
+          "consumes": true
+        },
+        {
+          "text": "{person} drops their anthology in the mud, ruining it",
+          "lethal": false,
+          "consumes": true
+        }
+      ]
+    },
+    {
+      "item": "popcorn",
+      "consumes": true,
+      "lethal": false,
+      "events": [
+        "{person} stands behind a tree watching {victim} while eating {item}."
+      ]
+    },
+    {
+      "item": "grappling hook",
+      "consumes": false,
+      "events": [
+        "{person} scales a cliff using their {item}.",
+        "{person} escapes danger by swinging away with their {item}.",
+        {
+          "text": "{person} drops onto {victim} from above using the {item}, killing them instantly.",
+          "lethal": true,
+          "consumes": false
+        }
+      ]
+    },
+    {
+      "item": "Coiled Rope",
+      "consumes": false,
+      "events": [
+        "{person} uses the {item} to climb a steep cliffside.",
+        {
+          "text": "{person} sets a rope trap that snaps tight around {victim}, killing them in the struggle.",
+          "lethal": true,
+          "consumes": false
+        }
+      ]
+    },
+    {
+      "item": "duct tape roll",
+      "consumes": true,
+      "events": [
+        "{person} patches broken gear with the {item}.",
+        "{person} wraps their wounds tightly with the {item}.",
+        {
+          "text": "{person} restrains {victim} with the {item} and finishes them off.",
+          "lethal": true,
+          "consumes": true
+        }
+      ]
+    },
+    {
+      "item": "Weatherproof Cloak",
+      "consumes": false,
+      "events": [
+        "{person} wraps their {item} tighter as rain pours over the arena.",
+        {
+          "text": "{victim} attacks {person}, but the {item} absorbs the blow... {person} counterattacks and kills {victim}.",
+          "lethal": true,
+          "consumes": false
+        }
+      ]
+    },
+    {
+      "item": "fire starter kit",
+      "consumes": false,
+      "events": [
+        "{person} starts a controlled fire with the {item}.",
+        {
+          "text": "{person} sets a trap by lighting foliage, burning {victim} alive.",
+          "lethal": true
+        }
+      ]
+    },
+    {
+      "item": "Flint & Steel",
+      "consumes": false,
+      "events": [
+        "{person} uses their {item} to start a small fire for warmth.",
+        "{person} chants ''Flint and Steel!'' in an unusually familar way.",
+        {
+          "text": "{person} sparks dry leaves near {victim}, and the sudden blaze overwhelms them.",
+          "lethal": true,
+          "consumes": false
+        }
+      ]
+    },
+    {
+      "item": "gun",
+      "consumes": false,
+      "events": [
+        "{person} cleans their {item}.",
+        {
+          "text": "{person} shoots {victim}.",
+          "lethal": true,
+          "consumes": false
+        },
+        {
+          "text": "{person} shoots {victim}.",
+          "lethal": true,
+          "consumes": false
+        },
+        {
+          "text": "{person} tests their {item} and breaks it.",
+          "lethal": false,
+          "consumes": true
+        }
+      ]
+    },
+    {
+      "item": "grenade",
+      "consumes": false,
+      "events": [
+        "{person} admires their {item}.",
+        {
+          "text": "{person} throws their {item}, killing  {victim} and {victim2}.",
+          "lethal": true,
+          "victim_count": 2,
+          "consumes": true
+        },
+        {
+          "text": "{person} throws their {item}, killing  {victim}.",
+          "lethal": true,
+          "consumes": true
+        }
+      ]
+    },
+    {
+      "item": "traffic cone that makes you think you're William Shakespeare",
+      "consumes": false,
+      "events": [
+        "{person}, now convinced they are the Bard reborn, doth place the {item} upon their head like a crown and proclaims, 'Hark! A new play begins!'",
+        "{person} wanders the arena clutching the {item}, reciting verses unknown to mortal ears.",
+        {
+          "text": "Inspired by the {item}, {person} delivers a tragic soliloquy so profound that {victim} stands entranced - till {person} strikes them down with eloquence.",
+          "lethal": true
+        },
+        {
+          "text": "{person}, channeling the fury of a thousand sonnets, commands the {item} as though it were a royal scepter and smites {victim} with theatrical flourish.",
+          "lethal": true
+        },
+        {
+          "text": "With grand Shakespearean bravado, {person} challenges {victim} and {victim2} to a duel of words, yet ends the contest with steel instead.",
+          "lethal": true,
+          "consumes": true,
+          "victim_count": 2
+        },
+        "{person} pauses mid-battle to narrate their own tale, the {item} held aloft: 'Forsooth, Act III shall not be my end!'"
+      ]
+    },
+    {
+      "item": "wooden shield",
+      "consumes": false,
+      "events": [
+        "{person} braces behind the {item}, testing how much punishment it can take.",
+        {
+          "text": "{victim} hammers {person} with a spear, but every strike glances off the {item} until {person} rushes forward and smashes {victim}.",
+          "lethal": true,
+          "consumes": false
+        },
+        {
+          "text": "{person} turtles up behind the {item} while {victim} fires wildly; once the barrage fades, {person} surges through and caves {victim}'s skull.",
+          "lethal": true,
+          "consumes": false
+        },
+        {
+          "text": "{person} locks the {item} in front as {victim} and {victim2} attack from both sides, then whips the shield outward and leaves them both lifeless.",
+          "lethal": true,
+          "victim_count": 2,
+          "consumes": false
+        }
+      ]
+    }
+  ],
+  "victory_template": "{name} emerges victorious with {kills} elimination(s)!"
 }
