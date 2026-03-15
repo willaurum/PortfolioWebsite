@@ -10,7 +10,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: #000e1b;
   color: #e0e1dd;
   line-height: 1.6;
@@ -34,7 +34,7 @@ h1 a:active {
 /* ============================================= */
 
 header {
-  background-color: #01192B;
+  background-color: #01192b;
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -89,11 +89,13 @@ nav ul li a {
   font-size: 18px;
   position: relative;
   padding: 5px 10px;
-  transition: color 0.3s ease, transform 0.3s ease;
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
 }
 
 nav ul li a::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -116,7 +118,7 @@ nav ul li a:hover::after {
 /* ---------- Home Section ---------- */
 #home {
   text-align: center;
-  background-color: #01253F;
+  background-color: #01253f;
   padding: 60px 20px;
   position: relative;
   animation: backgroundMove 5s infinite alternate;
@@ -145,7 +147,7 @@ nav ul li a:hover::after {
 }
 
 .links a {
-  background-color: #01192B;
+  background-color: #01192b;
   color: #e0e1dd;
   display: inline-block;
   padding: 12px 24px;
@@ -154,7 +156,10 @@ nav ul li a:hover::after {
   margin: 5px;
   font-size: 18px;
   white-space: nowrap;
-  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .links a:hover {
@@ -165,7 +170,7 @@ nav ul li a:hover::after {
 
 /* ---------- About Section ---------- */
 #about {
-  background-color: #01192B;
+  background-color: #01192b;
   color: #e0e1dd;
   border-left: 5px solid #e0ae3e;
   padding-left: 20px;
@@ -180,7 +185,7 @@ nav ul li a:hover::after {
 
 /* ---------- Experience Section ---------- */
 #experience {
-  background-color: #01192B;
+  background-color: #01192b;
   color: #e0e1dd;
   padding: 40px;
   max-width: 1200px;
@@ -197,12 +202,14 @@ nav ul li a:hover::after {
 }
 
 .experience-item {
-  background-color: #01253F;
+  background-color: #01253f;
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .experience-item:hover {
@@ -248,12 +255,14 @@ nav ul li a:hover::after {
 
 /* ---------- Projects Section ---------- */
 #projects .project {
-  background-color: #01253F;
+  background-color: #01253f;
   padding: 25px;
   margin-bottom: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 #projects .project:hover {
@@ -288,13 +297,16 @@ nav ul li a:hover::after {
 .project-button {
   display: inline-block;
   background-color: #e0ae3e;
-  color: #01192B;
+  color: #01192b;
   font-weight: bold;
   padding: 14px 28px;
   border-radius: 8px;
   font-size: 18px;
   text-decoration: none;
-  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -332,7 +344,7 @@ nav ul li a:hover::after {
 }
 
 .toggle-button {
-  background-color: #01192B;
+  background-color: #01192b;
   color: #e0ae3e;
   border: none;
   padding: 10px 20px;
@@ -360,7 +372,7 @@ nav ul li a:hover::after {
 #resume {
   text-align: center;
   margin-top: 40px;
-  background-color: #01253F;
+  background-color: #01253f;
   padding: 30px;
   border-radius: 15px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
@@ -386,14 +398,16 @@ nav ul li a:hover::after {
 
 #resume a button {
   background-color: #e0ae3e;
-  color: #01192B;
+  color: #01192b;
   padding: 12px 25px;
   border: none;
   border-radius: 8px;
   cursor: pointer;
   font-size: 18px;
   text-decoration: none;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
 }
 
 #resume a button:hover {
@@ -408,7 +422,7 @@ nav ul li a:hover::after {
   justify-content: center;
   align-items: center;
   padding: 40px;
-  background-color: #01192B;
+  background-color: #01192b;
   text-align: center;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -447,7 +461,7 @@ nav ul li a:hover::after {
   top: 10px;
   right: 10px;
   background-color: #e0ae3e;
-  color: #01192B;
+  color: #01192b;
   padding: 10px 16px;
   font-weight: bold;
   font-size: 16px;
@@ -459,11 +473,11 @@ nav ul li a:hover::after {
 /* ---------- Sidebar (Lessons Page) ---------- */
 #sidebar {
   width: 250px;
-  background-color: #01192B;
+  background-color: #01192b;
   padding: 20px;
   border-radius: 8px;
   margin-right: 20px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   position: sticky;
   top: 100px;
   height: fit-content;
@@ -499,18 +513,20 @@ nav ul li a:hover::after {
   display: block;
   padding: 6px 10px;
   border-radius: 6px;
-  transition: color 0.3s ease, padding-left 0.3s ease;
+  transition:
+    color 0.3s ease,
+    padding-left 0.3s ease;
 }
 
 #sidebar ul li a:hover {
   color: #916b17;
-  background-color: #01253F;
+  background-color: #01253f;
   padding-left: 15px;
 }
 
 #sidebar ul li a.active-lesson {
   background-color: #916b17;
-  color: #01192B;
+  color: #01192b;
   font-weight: bold;
 }
 
@@ -518,10 +534,10 @@ nav ul li a:hover::after {
 #lessons-content {
   flex: 1;
   min-width: 0;
-  background-color: #01253F;
+  background-color: #01253f;
   padding: 30px;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 #lessons-content section {
@@ -557,15 +573,15 @@ nav ul li a:hover::after {
 }
 
 .lesson-content code {
-  background-color: #01192B;
+  background-color: #01192b;
   color: #e0ae3e;
   padding: 2px 6px;
   border-radius: 4px;
-  font-family: 'Courier New', monospace;
+  font-family: "Courier New", monospace;
 }
 
 .lesson-content pre {
-  background-color: #01192B;
+  background-color: #01192b;
   color: #e0e1dd;
   padding: 15px;
   border-radius: 8px;
@@ -583,7 +599,7 @@ nav ul li a:hover::after {
   padding: 15px 20px;
   margin-left: 0;
   font-style: italic;
-  background-color: #01192B;
+  background-color: #01192b;
   border-radius: 0 8px 8px 0;
 }
 
@@ -599,12 +615,14 @@ nav ul li a:hover::after {
 #lesson-search {
   width: 100%;
   padding: 10px 35px 10px 12px;
-  background-color: #01253F;
+  background-color: #01253f;
   border: 2px solid #e0ae3e;
   border-radius: 6px;
   color: #e0e1dd;
   font-size: 14px;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
   box-sizing: border-box;
 }
 
@@ -640,18 +658,20 @@ nav ul li a:hover::after {
   display: none;
   align-items: center;
   justify-content: center;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
 #clear-search:hover {
   background-color: #e0ae3e;
-  color: #01192B;
+  color: #01192b;
 }
 
 #no-results {
   margin-top: 15px;
   padding: 10px;
-  background-color: #01253F;
+  background-color: #01253f;
   border-radius: 6px;
   border-left: 4px solid #e76f51;
 }
@@ -688,8 +708,12 @@ nav ul li a:hover::after {
 }
 
 @keyframes backgroundMove {
-  from { background-position: 0 0; }
-  to { background-position: 100% 100%; }
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 100%;
+  }
 }
 
 @keyframes aboutMove {
@@ -726,8 +750,12 @@ nav ul li a:hover::after {
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeInUp {
@@ -749,7 +777,7 @@ nav ul li a:hover::after {
   nav ul {
     flex-direction: column;
     gap: 15px;
-    background-color: #01253F;
+    background-color: #01253f;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
@@ -909,4 +937,16 @@ nav ul li a:hover::after {
   #lesson-search {
     font-size: 12px;
   }
+}
+
+.project-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-icon {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
 }
