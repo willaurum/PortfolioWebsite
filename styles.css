@@ -1127,16 +1127,7 @@ nav ul li a:hover::after {
 .experience-card a:hover {
   text-decoration: underline;
 }
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(25px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+
 @media (max-width: 768px) {
   .experience-container {
     padding: 30px;
