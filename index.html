@@ -33,10 +33,6 @@
     <section id="home">
       <div class="intro">
         <h2>Hi, I'm William Cook</h2>
-        <p>
-          A Computer Science student passionate about development,
-          problem-solving, and real-world programming challenges.
-        </p>
         <img
           src="Portrait.PNG"
           alt="Portrait of William Cook"
@@ -47,9 +43,6 @@
             >LinkedIn</a
           >
           <a href="https://github.com/willaurum" target="_blank">GitHub</a>
-          <a href="assets/William Cook - Resume.pdf" download
-            >Download Resume</a
-          >
         </div>
       </div>
     </section>
@@ -76,100 +69,114 @@
       </div>
     </section>
 
-    <section id="experience">
-      <h2>Experience</h2>
-      <div class="experience-item">
-        <h3>
-          <a
-            href="https://coledd.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Cole Design &amp; Development LLC (ColeDD)</a
-          >
-        </h3>
-        <p>
-          Embedded Systems Engineering Intern | Hudson, OH | Dec 2025 - Present
-          (Winter Break internship), returning Summer 2026 (May - Aug 2026)
-        </p>
-        <ul>
-          <li>
-            Contributed to embedded systems and IoT initiatives during Winter
-            Break internship
-          </li>
-          <li>
-            Supported architecture research for cloud-connected devices and
-            telemetry workflows
-          </li>
-          <li>
-            Evaluated platform and infrastructure options (Azure basics, Linux
-            vs Windows VMs) and messaging approaches (MQTT vs HTTP)
-          </li>
-          <li>
-            Collaborated directly with the team to document findings and propose
-            next steps for Summer 2026 work
-          </li>
-        </ul>
-      </div>
-      <div class="experience-item">
-        <h3>Software Development Club</h3>
-        <ul>
-          <li>
-            Participate in weekly hands-on projects to build and refine software
-            development skills
-          </li>
-          <li>
-            Collaborate with groups needing support in areas such as artificial
-            intelligence, web development, and beta testing
-          </li>
-          <li>
-            Won the club-hosted hackathon with a custom-built static website
-            generator
-          </li>
-          <li>
-            Engage in real-world applications and teamwork to expand practical
-            programming experience
-          </li>
-        </ul>
-      </div>
+    <section class="experience-section" id="experience">
+      <div class="experience-container">
+        <h2 class="section-title">Experience</h2>
 
-      <div class="experience-item">
-        <h3>Liberty University's Competitive Programming Team</h3>
-        <ul>
-          <li>Serving as Outreach Officer for the 2025–26 academic year</li>
-          <li>
-            Led a team to 6th place out of 61 teams in the 2024 ICPC
-            Mid-Atlantic Regionals
-          </li>
-          <li>Solved 100+ problems on open.kattis.com</li>
-          <li>
-            Learned to optimize code to solve algorithmic challenges efficiently
-          </li>
-        </ul>
-      </div>
+        <div class="experience-grid">
+          <div class="experience-card">
+            <h3>
+              <a
+                href="https://coledd.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Cole Design & Development LLC (ColeDD)
+              </a>
+            </h3>
 
-      <div class="experience-item">
-        <h3>LeetCode</h3>
-        <p>
-          I have currently completed
-          <span id="leetcode-count-exp">Loading...</span> LeetCode problems.
-          This number updates live thanks to a custom JavaScript script I wrote
-          that fetches my latest stats automatically whenever you load this
-          page.
-        </p>
-        <p>
-          Practicing these problems regularly has helped me improve my
-          problem-solving skills and strengthen my understanding of data
-          structures and algorithms. If you’d like to see the specific problems
-          I’ve solved along with my solutions, you can check out my GitHub
-          repository.
-        </p>
-        <p>
-          <a
-            href="https://github.com/willaurum/LeetCode-Solutions"
-            target="_blank"
-            >View on GitHub</a
-          >
-        </p>
+            <p class="experience-role">
+              Embedded Systems Engineering Intern | Hudson, OH | Dec 2025 -
+              Present
+            </p>
+
+            <ul>
+              <li>
+                Contributed to embedded systems and IoT initiatives during
+                Winter Break internship
+              </li>
+              <li>
+                Supported architecture research for cloud-connected devices and
+                telemetry workflows
+              </li>
+              <li>
+                Evaluated platform and infrastructure options (Azure basics,
+                Linux vs Windows VMs) and messaging approaches (MQTT vs HTTP)
+              </li>
+              <li>
+                Collaborated directly with the team to document findings and
+                propose next steps for Summer 2026 work
+              </li>
+            </ul>
+          </div>
+
+          <div class="experience-card">
+            <h3>Software Development Club</h3>
+
+            <ul>
+              <li>
+                Participate in weekly hands-on projects to build and refine
+                software development skills
+              </li>
+              <li>
+                Collaborate with groups needing support in areas such as
+                artificial intelligence, web development, and beta testing
+              </li>
+              <li>
+                Won the club-hosted hackathon with a custom-built static website
+                generator
+              </li>
+              <li>
+                Engage in real-world applications and teamwork to expand
+                practical programming experience
+              </li>
+            </ul>
+          </div>
+
+          <div class="experience-card">
+            <h3>Liberty University's Competitive Programming Team</h3>
+
+            <ul>
+              <li>Serving as Outreach Officer for the 2025–26 academic year</li>
+              <li>
+                Led a team to 6th place out of 61 teams in the 2024 ICPC
+                Mid-Atlantic Regionals
+              </li>
+              <li>Solved 100+ problems on open.kattis.com</li>
+              <li>
+                Learned to optimize code to solve algorithmic challenges
+                efficiently
+              </li>
+            </ul>
+          </div>
+
+          <div class="experience-card">
+            <h3>LeetCode</h3>
+
+            <p>
+              I have currently completed
+              <span id="leetcode-count-exp">Loading...</span> LeetCode problems.
+              This number updates live thanks to a custom JavaScript script I
+              wrote that fetches my latest stats automatically whenever you load
+              this page.
+            </p>
+
+            <p>
+              Practicing these problems regularly has helped me improve my
+              problem-solving skills and strengthen my understanding of data
+              structures and algorithms.
+            </p>
+
+            <p>
+              <a
+                href="https://github.com/willaurum/LeetCode-Solutions"
+                target="_blank"
+              >
+                View on GitHub
+              </a>
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 
