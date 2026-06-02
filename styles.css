@@ -1022,10 +1022,38 @@ details > *:not(summary) {
 @media (max-width: 720px) {
   .header-inner {
     align-items: flex-start;
+    padding: 0.5rem 0;
+    gap: 0.5rem;
+  }
+
+  .brand-mark {
+    width: 36px;
+    height: 36px;
+    flex: 0 0 36px;
+    font-size: 0.85rem;
+  }
+
+  .brand-text strong {
+    font-size: 0.9rem;
+  }
+
+  .brand-text span {
+    font-size: 0.65rem;
+  }
+
+  .site-nav {
+    gap: 0.1rem 0.5rem;
+  }
+
+  .site-nav a {
+    font-size: 0.85rem;
+    padding: 0.3rem 0.1rem;
   }
 
   .nav-cta {
     width: 100%;
+    padding: 0.5rem 0.9rem;
+    font-size: 0.85rem;
   }
 
   .hero-home {
