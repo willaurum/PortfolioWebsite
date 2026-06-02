@@ -1,321 +1,231 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="styles.css" />
-    <!-- AOS animation CSS (optional) -->
-    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#01192b" />
     <title>William Cook | Portfolio</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
-    <!-- <div id="leetcode-counter">
-      LeetCode Problems Solved: <span id="leetcode-count-top">Loading...</span>
-    </div> -->
+    <a class="skip-link" href="#main-content">Skip to content</a>
 
-    <header>
-      <nav>
-        <h1><a href="index.html">William Cook</a></h1>
-        <ul>
-          <li><a href="index.html#about">About Me</a></li>
-          <li><a href="index.html#experience">Experience</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
-          <li><a href="learnPython.html">Lessons</a></li>
-        </ul>
-      </nav>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="William Cook home">
+          <span class="brand-mark" aria-hidden="true">WC</span>
+          <span class="brand-text">
+            <span>Portfolio</span>
+            <strong>William Cook</strong>
+          </span>
+        </a>
+
+        <nav class="site-nav" aria-label="Primary">
+          <a href="index.html" aria-current="page">Home</a>
+          <a href="#experience">Experience</a>
+          <a href="projects.html">Projects</a>
+          <a href="learnPython.html">Lessons</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <a class="nav-cta" href="assets/William Cook - Resume.pdf" download="William Cook - Resume.pdf">
+          Download Resume
+        </a>
+      </div>
     </header>
 
-    <section id="home">
-      <div class="intro">
-        <h2>Hi, I'm William Cook</h2>
+    <main id="main-content">
+      <section class="hero hero-home" id="home" aria-label="William Cook introduction">
         <img
+          class="hero-image"
           src="Portrait.PNG"
           alt="Portrait of William Cook"
-          class="portrait"
         />
-        <div class="links">
-          <a href="https://www.linkedin.com/in/willaurum" target="_blank"
-            >LinkedIn</a
-          >
-          <a href="https://github.com/willaurum" target="_blank">GitHub</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="hero">
-      <div class="hero-card">
-        <h2 class="hero-subtitle">
-          Full-Stack Developer • Systems Engineer • Computer Science Student
-        </h2>
-
-        <p class="hero-description">
-          I build performant, scalable, and practical software — from embedded
-          systems and server infrastructure to full-stack web applications.
-          Currently studying Computer Science at Liberty University and building
-          real-world systems that solve meaningful problems.
-        </p>
-
-        <div class="hero-buttons">
-          <a href="#projects" class="btn primary">View Projects</a>
-          <a
-            href="assets/William Cook - Resume.pdf"
-            class="btn secondary"
-            download="William Cook - Resume.pdf"
-          >
-            Download Resume
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section class="experience-section" id="experience">
-      <div class="experience-container">
-        <h2 class="section-title">Experience</h2>
-
-        <div class="experience-grid">
-          <div class="experience-card">
-            <h3>
-              <a
-                href="https://coledd.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Cole Design & Development LLC (ColeDD)
-              </a>
-            </h3>
-
-            <p class="experience-role">
-              Embedded Systems Engineering Intern | Hudson, OH | Dec 2025 -
-              Present
-            </p>
-
-            <ul>
-              <li>
-                Contributed to embedded systems and IoT initiatives during
-                Winter Break internship
-              </li>
-              <li>
-                Supported architecture research for cloud-connected devices and
-                telemetry workflows
-              </li>
-              <li>
-                Evaluated platform and infrastructure options (Azure basics,
-                Linux vs Windows VMs) and messaging approaches (MQTT vs HTTP)
-              </li>
-              <li>
-                Collaborated directly with the team to document findings and
-                propose next steps for Summer 2026 work
-              </li>
-            </ul>
-          </div>
-
-          <div class="experience-card">
-            <h3>Software Development Club</h3>
-
-            <ul>
-              <li>
-                Participate in weekly hands-on projects to build and refine
-                software development skills
-              </li>
-              <li>
-                Collaborate with groups needing support in areas such as
-                artificial intelligence, web development, and beta testing
-              </li>
-              <li>
-                Won the club-hosted hackathon with a custom-built static website
-                generator
-              </li>
-              <li>
-                Engage in real-world applications and teamwork to expand
-                practical programming experience
-              </li>
-            </ul>
-          </div>
-
-          <div class="experience-card">
-            <h3>Liberty University's Competitive Programming Team</h3>
-
-            <ul>
-              <li>Serving as Outreach Officer for the 2025–26 academic year</li>
-              <li>
-                Led a team to 6th place out of 61 teams in the 2024 ICPC
-                Mid-Atlantic Regionals
-              </li>
-              <li>Solved 100+ problems on open.kattis.com</li>
-              <li>
-                Learned to optimize code to solve algorithmic challenges
-                efficiently
-              </li>
-            </ul>
-          </div>
-
-          <div class="experience-card">
-            <h3>LeetCode</h3>
-
-            <p>
-              I have currently completed
-              <span id="leetcode-count-exp">Loading...</span> LeetCode problems.
-              This number updates live thanks to a custom JavaScript script I
-              wrote that fetches my latest stats automatically whenever you load
-              this page.
-            </p>
-
-            <p>
-              Practicing these problems regularly has helped me improve my
-              problem-solving skills and strengthen my understanding of data
-              structures and algorithms.
-            </p>
-
-            <p>
-              <a
-                href="https://github.com/willaurum/LeetCode-Solutions"
-                target="_blank"
-              >
-                View on GitHub
-              </a>
-            </p>
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="container hero-content">
+          <p class="eyebrow">CS Student &bull; Liberty University</p>
+          <h1>Hi, I'm William Cook</h1>
+          <p class="hero-subtitle">
+            Full-Stack Developer &bull; Systems Engineer &bull; Computer Science Student
+          </p>
+          <p class="hero-description">
+            I build performant, scalable, and practical software &mdash; from embedded
+            systems and server infrastructure to full-stack web applications.
+            Currently studying Computer Science at Liberty University and building
+            real-world systems that solve meaningful problems.
+          </p>
+          <div class="hero-actions" aria-label="Portfolio links">
+            <a class="button primary" href="projects.html">View Projects</a>
+            <a class="button secondary" href="https://www.linkedin.com/in/willaurum" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="button secondary" href="https://github.com/willaurum" target="_blank" rel="noreferrer">GitHub</a>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Pinned Project -->
-    <section id="projects" data-aos="fade-up">
-      <div class="experience-container">
-        <h2 class="section-title">Pinned Project</h2>
+      <section class="section alt" id="experience">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Background</p>
+            <h2 class="section-title">Experience</h2>
+          </div>
 
-        <div class="projects-grid">
-          <!-- Pinned Project Card -->
-          <div class="project-card project">
-            <h3>Self-Hosted Server Infrastructure</h3>
-            <p class="short-description">
+          <div class="experience-grid">
+            <article class="info-card">
+              <h3>
+                <a href="https://coledd.com/" target="_blank" rel="noopener noreferrer">
+                  Cole Design &amp; Development LLC (ColeDD)
+                </a>
+              </h3>
+              <p class="role-line">
+                Embedded Systems Engineering Intern | Hudson, OH | Dec 2025 - Present
+              </p>
+              <ul>
+                <li>
+                  Contributed to embedded systems and IoT initiatives during
+                  Winter Break internship
+                </li>
+                <li>
+                  Supported architecture research for cloud-connected devices and
+                  telemetry workflows
+                </li>
+                <li>
+                  Evaluated platform and infrastructure options (Azure basics,
+                  Linux vs Windows VMs) and messaging approaches (MQTT vs HTTP)
+                </li>
+                <li>
+                  Collaborated directly with the team to document findings and
+                  propose next steps for Summer 2026 work
+                </li>
+              </ul>
+            </article>
+
+            <article class="info-card">
+              <h3>Software Development Club</h3>
+              <ul>
+                <li>
+                  Participate in weekly hands-on projects to build and refine
+                  software development skills
+                </li>
+                <li>
+                  Collaborate with groups needing support in areas such as
+                  artificial intelligence, web development, and beta testing
+                </li>
+                <li>
+                  Won the club-hosted hackathon with a custom-built static website
+                  generator
+                </li>
+                <li>
+                  Engage in real-world applications and teamwork to expand
+                  practical programming experience
+                </li>
+              </ul>
+            </article>
+
+            <article class="info-card">
+              <h3>Liberty University's Competitive Programming Team</h3>
+              <ul>
+                <li>Served as Outreach Officer during the 2025-26 academic year</li>
+                <li>
+                  Helped lead Liberty to 6th place among 61 teams at the 2024
+                  ICPC Mid-Atlantic Regional
+                </li>
+                <li>Solved 100+ algorithmic problems on Kattis</li>
+                <li>
+                  Strengthened skills in data structures, algorithms, and
+                  performance-focused problem solving
+                </li>
+              </ul>
+            </article>
+
+            <article class="info-card">
+              <h3>LeetCode</h3>
+              <p>
+                I have currently completed
+                <span id="leetcode-count-exp">Loading...</span> LeetCode problems.
+                This number updates live thanks to a custom JavaScript script I
+                wrote that fetches my latest stats automatically whenever you load
+                this page.
+              </p>
+              <p>
+                Practicing these problems regularly has helped me improve my
+                problem-solving skills and strengthen my understanding of data
+                structures and algorithms.
+              </p>
+              <p>
+                <a class="text-link" href="https://github.com/willaurum/LeetCode-Solutions" target="_blank" rel="noreferrer">
+                  View on GitHub
+                </a>
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="container split">
+          <div>
+            <div class="section-heading">
+              <p class="eyebrow">Pinned Project</p>
+              <h2 class="section-title">Self-Hosted Server Infrastructure</h2>
+            </div>
+            <p class="section-subtitle">
               Designed, deployed, and maintained a headless Linux server using a
               Raspberry Pi Compute Module 5 with NVMe storage, optimized for
               remote access and long-running services.
             </p>
-
-            <div class="full-description">
-              <ul>
-                <li>
-                  Configured Raspberry Pi OS (64-bit) on CM5 with NVMe root
-                  filesystem
-                </li>
-                <li>
-                  Customized EEPROM boot order to prioritize NVMe over on-module
-                  storage
-                </li>
-                <li>Resolved boot conflicts caused by residual storage</li>
-                <li>
-                  Set up secure key-based SSH access and Ethernet-first
-                  networking
-                </li>
-                <li>
-                  Disabled Wi-Fi via NetworkManager for reliability and security
-                </li>
-                <li>Installed and configured Tailscale for remote access</li>
-                <li>
-                  Monitored system health: CPU temp, memory, zram swap, storage
-                  mounts
-                </li>
-                <li>
-                  Deployed and administered two modded Minecraft servers that
-                  run simultaneously
-                </li>
-                <li>
-                  Automated maintenance with cron jobs for backups and
-                  permissions
-                </li>
-                <li>
-                  Performed routine Linux server administration and service
-                  management
-                </li>
-              </ul>
+            <div class="section-actions">
+              <a class="button primary" href="projects.html">View All Projects</a>
             </div>
+          </div>
 
-            <button class="toggle-button">View More</button>
+          <article class="project-card compact-project">
+            <p class="eyebrow">Technical Highlights</p>
+            <ul>
+              <li>Configured Raspberry Pi OS on CM5 with an NVMe root filesystem</li>
+              <li>Prioritized NVMe boot through EEPROM configuration</li>
+              <li>Set up key-based SSH, Ethernet-first networking, and Tailscale access</li>
+              <li>Disabled Wi-Fi through NetworkManager for reliability and security</li>
+              <li>Monitored CPU temperature, memory, zram swap, and storage mounts</li>
+              <li>Automated backups and permissions maintenance with cron jobs</li>
+              <li>Administered two simultaneous modded Minecraft server instances</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section alt" id="contact">
+        <div class="container contact-panel">
+          <div class="contact-heading">
+            <p class="eyebrow">Contact</p>
+            <h2 class="section-title">Let's Connect</h2>
+            <p class="contact-intro">
+              I'm always open to talking through software projects,
+              internships, collaboration ideas, or new opportunities.
+            </p>
+          </div>
+          <div class="contact-copy">
+            <div class="contact-methods" aria-label="Contact options">
+              <p class="contact-method">
+                <span>Email</span>
+                <a href="mailto:williamcook0811@gmail.com">williamcook0811@gmail.com</a>
+              </p>
+              <p class="contact-method">
+                <span>LinkedIn</span>
+                <a href="https://www.linkedin.com/in/willaurum" target="_blank" rel="noreferrer">linkedin.com/in/willaurum</a>
+              </p>
+            </div>
           </div>
         </div>
+      </section>
+    </main>
 
-        <!-- Prominent “View All Projects” Button -->
-        <div style="text-align: center; margin-top: 30px">
-          <a
-            href="projects.html"
-            class="btn primary"
-            style="font-size: 1.2rem; padding: 0.8rem 2rem"
-          >
-            View All Projects
-          </a>
-        </div>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="footer-mark">William Cook</p>
+        <p>&copy; 2026 William Cook. All rights reserved.</p>
       </div>
-    </section>
-
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <p>
-        Feel free to reach out to me via email:
-        <a href="mailto:williamcook0811@gmail.com" class="email-link"
-          >williamcook0811@gmail.com</a
-        >
-      </p>
-    </section>
-
-    <footer>
-      <p>&copy; 2025 William Cook. All rights reserved.</p>
     </footer>
-
-    <!-- AOS animation JS (optional) -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    <!-- Toggle “View More / View Less” script -->
-    <script>
-      document.querySelectorAll(".toggle-button").forEach((button) => {
-        button.addEventListener("click", () => {
-          const project = button.closest(".project");
-          project.classList.toggle("expanded");
-          button.textContent = project.classList.contains("expanded")
-            ? "View Less"
-            : "View More";
-        });
-      });
-    </script>
-
-    <!-- Script for checking total LeetCode problems solved -->
-    <script>
-      async function countLeetCodeFolders() {
-        const owner = "Willaurum";
-        const repo = "LeetCode-Solutions";
-        const url = `https://api.github.com/repos/${owner}/${repo}/contents`;
-
-        try {
-          const response = await fetch(url);
-          const data = await response.json();
-
-          if (!Array.isArray(data)) {
-            document.getElementById("leetcode-count-top").textContent = "N/A";
-            document.getElementById("leetcode-count-exp").textContent = "N/A";
-            return;
-          }
-
-          const folderCount = data.filter((item) => item.type === "dir").length;
-          document.getElementById("leetcode-count-top").textContent =
-            folderCount;
-          document.getElementById("leetcode-count-exp").textContent =
-            folderCount;
-        } catch (error) {
-          console.error("Error fetching GitHub data:", error);
-          document.getElementById("leetcode-count-top").textContent = "Error";
-          document.getElementById("leetcode-count-exp").textContent = "Error";
-        }
-      }
-
-      countLeetCodeFolders();
-    </script>
   </body>
 </html>
