@@ -1,0 +1,371 @@
+/*
+ * Verbatim copy of the <style> block from theAreanaSim/simulation.html.
+ *
+ * The only change: the bare element selectors (body, h1-h3, p, button, inputs)
+ * are confined to the simulator route with a `:where(body.arena-page)` prefix.
+ * `:where()` contributes no specificity, so every rule keeps exactly the weight
+ * it had on the standalone page and the cascade is identical - it simply stops
+ * these rules from leaking onto the rest of the single-page app.
+ *
+ * `#root` is made transparent so that main.arena-container stays a direct flex
+ * child of the centred body, as it was in the original document.
+ */
+
+:root {
+    --arena-panel: rgba(1, 25, 43, 0.92);
+    --arena-border: rgba(224, 174, 62, 0.3);
+    --arena-accent: #e0ae3e;
+    --arena-muted: rgba(224, 225, 221, 0.78);
+}
+
+body:where(.arena-page) {
+    background-color: #000e1b;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 16px;
+}
+
+.arena-container {
+    width: 100%;
+    max-width: 640px;
+}
+
+.panel {
+    background: var(--arena-panel);
+    border: 1px solid var(--arena-border);
+    border-radius: 18px;
+    padding: 28px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+}
+
+:where(body.arena-page) h1,
+:where(body.arena-page) h2,
+:where(body.arena-page) h3 {
+    color: var(--arena-accent);
+    margin-top: 0;
+}
+
+:where(body.arena-page) p {
+    color: var(--arena-muted);
+}
+
+.hidden {
+    display: none !important;
+}
+
+.form-grid {
+    display: grid;
+    gap: 16px;
+}
+
+:where(body.arena-page) input[type="number"],
+:where(body.arena-page) textarea {
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid var(--arena-border);
+    background: rgba(1, 37, 63, 0.9);
+    color: #e0e1dd;
+    padding: 12px 14px;
+    font-size: 1rem;
+}
+
+:where(body.arena-page) textarea {
+    resize: vertical;
+    min-height: 140px;
+    line-height: 1.4;
+}
+
+.helper-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+    gap: 12px;
+}
+
+:where(body.arena-page) button {
+    border: none;
+    border-radius: 999px;
+    padding: 12px 20px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+:where(body.arena-page) button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #e0ae3e, #f6d06f);
+    color: #01192b;
+    box-shadow: 0 12px 24px rgba(224, 174, 62, 0.3);
+}
+
+.btn-ghost {
+    background: transparent;
+    border: 1px solid var(--arena-border);
+    color: var(--arena-accent);
+}
+
+.action-area {
+    margin-top: 20px;
+}
+
+.btn-full {
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.events-list {
+    margin-top: 12px;
+    border-radius: 12px;
+    border: 1px solid rgba(224, 174, 62, 0.18);
+    background: rgba(0, 0, 0, 0.35);
+    padding: 14px 16px;
+}
+
+.event-line {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    font-size: 0.95rem;
+    color: #e0e1dd;
+    margin: 0 0 6px;
+}
+
+.event-line:last-child {
+    margin-bottom: 0;
+}
+
+.event-dot {
+    height: 8px;
+    width: 8px;
+    border-radius: 999px;
+    margin-top: 6px;
+    flex-shrink: 0;
+    background: var(--arena-accent);
+    box-shadow: 0 0 10px rgba(224, 174, 62, 0.6);
+}
+
+.event-line.lethal .event-dot {
+    background: #ff6b6b;
+    box-shadow: 0 0 10px rgba(255, 107, 107, 0.6);
+}
+.event-line.lethal {
+    color: #ff9a9a;
+}
+
+.event-line.inventory .event-dot {
+    background: #5dfdcb;
+    box-shadow: 0 0 10px rgba(93, 253, 203, 0.6);
+}
+.event-line.inventory {
+    color: #a3ffea;
+}
+
+.event-line.loot .event-dot {
+    background: #73ff87;
+    box-shadow: 0 0 10px rgba(115, 255, 135, 0.6);
+}
+.event-line.loot {
+    color: #c0ffcb;
+}
+
+.event-line.item-special .event-dot {
+    background: #ffd166;
+    box-shadow: 0 0 10px rgba(255, 209, 102, 0.6);
+}
+.event-line.item-special {
+    color: #ffe3a8;
+}
+.event-line.item-special.lethal {
+    color: #ff9a9a;
+}
+
+.event-line.victory .event-dot {
+    background: #f4f48b;
+    box-shadow: 0 0 10px rgba(244, 244, 139, 0.6);
+}
+.event-line.victory {
+    color: #fef7b7;
+    font-weight: 600;
+}
+
+.event-line.non-lethal {
+    color: #b9ceff;
+}
+
+.event-line.item-special.lethal .event-dot {
+    background: #ff6b6b;
+    box-shadow: 0 0 10px rgba(255, 107, 107, 0.6);
+}
+
+.summary-block {
+    margin-top: 24px;
+    border-radius: 12px;
+    border: 1px solid rgba(224, 174, 62, 0.15);
+    padding: 16px;
+    background: rgba(1, 37, 63, 0.78);
+}
+
+.summary-block ul {
+    margin: 8px 0 0;
+    padding-left: 18px;
+    color: #e0e1dd;
+}
+
+.status-board {
+    margin-top: 18px;
+    border-top: 1px solid rgba(224, 174, 62, 0.2);
+    padding-top: 12px;
+}
+
+.status-board ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: grid;
+    gap: 6px;
+}
+
+.status-entry {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.95rem;
+    color: #e0e1dd;
+}
+
+.status-entry .icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+
+.status-entry.alive .icon {
+    background: rgba(93, 253, 203, 0.15);
+    color: #5dfdcb;
+}
+
+.status-entry.dead .icon {
+    background: rgba(255, 107, 107, 0.15);
+    color: #ff6b6b;
+}
+
+#simulationScreen {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.screen-header {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.screen-header .header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.instruction-text {
+    margin: 0;
+    color: var(--arena-muted);
+}
+
+.phase-chip {
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    background: rgba(224, 174, 62, 0.18);
+    color: var(--arena-accent);
+}
+
+.phase-chip.summary {
+    background: rgba(255, 137, 137, 0.18);
+    color: #ff9a9a;
+}
+
+.phase-chip.advance {
+    background: rgba(93, 253, 203, 0.18);
+    color: #5dfdcb;
+}
+
+.phase-chip.complete {
+    background: rgba(244, 244, 139, 0.2);
+    color: #f4f48b;
+}
+
+.events-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    min-height: 320px;
+}
+
+.events-list {
+    flex: 1;
+    max-height: 50vh;
+    overflow-y: auto;
+    padding-right: 6px;
+}
+
+.control-tray {
+    position: sticky;
+    bottom: -24px;
+    background: rgba(1, 25, 43, 0.92);
+    border-radius: 16px;
+    border: 1px solid rgba(224, 174, 62, 0.18);
+    padding: 16px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.control-tray .tray-hint {
+    margin: 0;
+    text-align: center;
+    font-size: 0.85rem;
+    color: rgba(224, 225, 221, 0.65);
+}
+
+@media (min-width: 768px) {
+    .events-list {
+        max-height: 55vh;
+    }
+
+    .control-tray {
+        flex-direction: row;
+        align-items: center;
+        gap: 18px;
+    }
+
+    .control-tray .tray-hint {
+        text-align: left;
+    }
+}
+
+body.arena-page #root {
+    display: contents;
+}

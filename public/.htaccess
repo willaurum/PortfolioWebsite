@@ -1,0 +1,13 @@
+RewriteEngine On
+
+# Serve existing files and directories as-is
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Redirect the legacy .html URLs to their extensionless routes
+RewriteCond %{THE_REQUEST} \s/([^.]+)\.html
+RewriteRule ^ /%1 [R=301,L]
+
+# Everything else is handled by the React single-page app
+RewriteRule ^ /index.html [L]
